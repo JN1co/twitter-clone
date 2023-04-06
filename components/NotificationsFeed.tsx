@@ -29,7 +29,7 @@ const NotificationsFeed = () => {
     return (
         <div className="flex flex-col">
             {fetchedNotifications.map((notification: Record<string, any>) => (
-                <div
+                <div key={notification.id}
                     className="
                         flex
                         flex-row
